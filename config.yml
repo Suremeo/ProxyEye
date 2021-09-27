@@ -1,0 +1,6 @@
+listener:
+  address: 0.0.0.0:19132
+  auth: true
+  motd: <bold><dark-purple>Proxy</dark-purple><purple>Eye</purple></bold>
+logging:
+  level: DEVELOPMENT
