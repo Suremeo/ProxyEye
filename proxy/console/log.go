@@ -31,7 +31,7 @@ var dioder = diode.NewWriter(os.Stdout, 1000, 5*time.Millisecond, func(missed in
 
 var debug = true
 
-var logo = fmt.Sprintf("\n\n          ____                        ______\n         / __ \\_________  _  ____  __/ ____/_  _____\n        / /_/ / ___/ __ \\| |/_/ / / / __/ / / / / _ \\\n       / ____/ /  / /_/ />  </ /_/ / /___/ /_/ /  __/\n      /_/   /_/   \\____/_/|_|\\__, /_____/\\__, /\\___/\n                               /_/         /_/\n      \n      %v\n \n                    %v %v\n\n", color.HiMagentaString("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"), color.HiWhiteString("Author:"), color.HiRedString("Vastle, LLC"))
+var logo = fmt.Sprintf("\n\n          ____                        ______\n         / __ \\_________  _  ____  __/ ____/_  _____\n        / /_/ / ___/ __ \\| |/_/ / / / __/ / / / / _ \\\n       / ____/ /  / /_/ />  </ /_/ / /___/ /_/ /  __/\n      /_/   /_/   \\____/_/|_|\\__, /_____/\\__, /\\___/\n                               /_/         /_/\n      \n      %v\n \n                    %v %v\n\n", color.HiMagentaString("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"), color.HiWhiteString("Author:"), color.HiRedString("Suremeo"))
 
 func init() {
 	_, _ = dioder.Write([]byte(fmt.Sprintf("\033]0;ProxyEye [%v]\007", version.String)))
